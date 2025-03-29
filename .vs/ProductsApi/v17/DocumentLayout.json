@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|c:\\users\\makis\\desktop\\workspace\\productsapi\\productsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|solutionrelative:productsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|c:\\users\\makis\\desktop\\workspace\\productsapi\\productsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|solutionrelative:productsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|c:\\users\\makis\\desktop\\workspace\\productsapi\\productsapi\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|solutionrelative:productsapi\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|c:\\users\\makis\\desktop\\workspace\\productsapi\\productsapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|solutionrelative:productsapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|c:\\users\\makis\\desktop\\workspace\\productsapi\\productsapi\\data\\productdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|solutionrelative:productsapi\\data\\productdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|c:\\users\\makis\\desktop\\workspace\\productsapi\\productsapi\\productsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DAB20879-2AB4-423F-859F-B5D0527ADD31}|ProductsApi\\ProductsApi.csproj|solutionrelative:productsapi\\productsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\Program.cs",
+              "RelativeDocumentMoniker": "ProductsApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\Program.cs",
+              "RelativeToolTip": "ProductsApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T19:44:44.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ProductsApi\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ProductsApi\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowB8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T21:58:03.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\Data\\ProductDbContext.cs",
+              "RelativeDocumentMoniker": "ProductsApi\\Data\\ProductDbContext.cs",
+              "ToolTip": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\Data\\ProductDbContext.cs",
+              "RelativeToolTip": "ProductsApi\\Data\\ProductDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T21:55:26.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductsApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\appsettings.json",
+              "RelativeToolTip": "ProductsApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-28T21:56:04.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\Models\\Products.cs",
+              "RelativeDocumentMoniker": "ProductsApi\\Models\\Products.cs",
+              "ToolTip": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\Models\\Products.cs",
+              "RelativeToolTip": "ProductsApi\\Models\\Products.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T21:54:03.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductsApi.csproj",
+              "DocumentMoniker": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\ProductsApi.csproj",
+              "RelativeDocumentMoniker": "ProductsApi\\ProductsApi.csproj",
+              "ToolTip": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\ProductsApi.csproj",
+              "RelativeToolTip": "ProductsApi\\ProductsApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-28T21:53:38.947Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

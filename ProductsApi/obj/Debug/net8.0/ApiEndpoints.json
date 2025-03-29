@@ -1,0 +1,111 @@
+[
+  {
+    "ContainingType": "ProductAPI.Controllers.ProductsController",
+    "Method": "CreateProduct",
+    "RelativePath": "api/products",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "ProductsAPI.Models.Product",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductAPI.Controllers.ProductsController",
+    "Method": "GetProducts",
+    "RelativePath": "api/products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProductsAPI.Models.Product, ProductsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductAPI.Controllers.ProductsController",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/products/{oid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "oid",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedProduct",
+        "Type": "ProductsAPI.Models.Product",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductAPI.Controllers.ProductsController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/products/{oid}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "oid",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductAPI.Controllers.ProductsController",
+    "Method": "GetProduct",
+    "RelativePath": "api/products/{Oid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "oid",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProductsAPI.Models.Product",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductAPI.Controllers.ProductsController",
+    "Method": "Finalize",
+    "RelativePath": "api/products/finalize",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
