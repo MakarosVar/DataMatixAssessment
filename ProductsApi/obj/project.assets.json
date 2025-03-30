@@ -5176,11 +5176,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\ProductsApi.csproj",
+      "projectUniqueName": "C:\\Users\\Makis\\Desktop\\Workspace\\DataMatixAssessment\\ProductsApi\\ProductsApi.csproj",
       "projectName": "ProductsApi",
-      "projectPath": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\ProductsApi.csproj",
+      "projectPath": "C:\\Users\\Makis\\Desktop\\Workspace\\DataMatixAssessment\\ProductsApi\\ProductsApi.csproj",
       "packagesPath": "C:\\Users\\Makis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Makis\\Desktop\\Workspace\\ProductsApi\\ProductsApi\\obj\\",
+      "outputPath": "C:\\Users\\Makis\\Desktop\\Workspace\\DataMatixAssessment\\ProductsApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
