@@ -1,0 +1,47 @@
+<div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+  <div class="row justify-content-center w-100">
+    <div class="col-md-8 col-lg-6">
+      <mat-card class="p-4 shadow-lg rounded">
+        <mat-card-title class="text-center text-primary font-weight-bold mb-4">
+          <h2>{{ isEditing ? 'Edit Product' : 'Create Product' }}</h2>
+        </mat-card-title>
+
+        <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <mat-form-field appearance="fill" class="w-100">
+              <mat-label>Name</mat-label>
+              <input matInput formControlName="name" class="form-control" required>
+              <mat-error *ngIf="productForm.get('name')?.hasError('required')">Name is required</mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="mb-3">
+            <mat-form-field appearance="fill" class="w-100">
+              <mat-label>Description</mat-label>
+              <textarea matInput formControlName="description" class="form-control" required></textarea>
+              <mat-error *ngIf="productForm.get('description')?.hasError('required')">Description is required</mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="mb-3">
+            <mat-form-field appearance="fill" class="w-100">
+              <mat-label>Price</mat-label>
+              <input matInput formControlName="price" type="number" class="form-control" required>
+              <mat-error *ngIf="productForm.get('price')?.hasError('required')">Price is required</mat-error>
+              <mat-error *ngIf="productForm.get('price')?.hasError('min')">Price must be a positive number</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="d-flex justify-content-end mt-3">
+            <button mat-raised-button color="primary" type="submit" class="btn btn-primary" [disabled]="productForm.invalid">
+              {{ isEditing ? 'Update' : 'Create' }} Product
+            </button>
+          </div>
+        </form>
+
+        <div class="mt-4 text-center">
+          <button mat-button (click)="goBack()" class="btn btn-secondary">Cancel</button>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

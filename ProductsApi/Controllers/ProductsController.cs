@@ -31,18 +31,64 @@ namespace ProductAPI.Controllers
                 return StatusCode(500, "Error occurred while creating product: " + ex.Message);
             }
         }
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+        [HttpGet("deleted")]
+        public async Task<IActionResult> GetDeletedProducts(int pageNumber = 1, int pageSize = 10)
         {
             try
             {
-                return await _context.Products.Where(p => !p.IsDeleted).ToListAsync();
+                var query = _context.Products
+                    .Where(p => p.IsDeleted) 
+                    .OrderBy(p => p.Name); 
+
+                var totalRecords = await query.CountAsync();
+                var products = await query
+                    .Skip((pageNumber - 1) * pageSize)
+                    .Take(pageSize)
+                    .ToListAsync();
+
+                return Ok(new
+                {
+                    TotalRecords = totalRecords,
+                    PageNumber = pageNumber,
+                    PageSize = pageSize,
+                    Data = products
+                });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Error occurred while fetching products: " + ex.Message);
+                return StatusCode(500, new { message = "Error fetching deleted products.", error = ex.Message });
             }
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetProducts(int pageNumber = 1, int pageSize = 10)
+        {
+            try
+            {
+                var query = _context.Products
+                    .Where(p => !p.IsDeleted) 
+                    .OrderBy(p => p.Name); 
+
+                var totalRecords = await query.CountAsync();
+                var products = await query
+                    .Skip((pageNumber - 1) * pageSize)
+                    .Take(pageSize)
+                    .ToListAsync();
+
+                return Ok(new
+                {
+                    TotalRecords = totalRecords,
+                    PageNumber = pageNumber,
+                    PageSize = pageSize,
+                    Data = products
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while fetching products.", error = ex.Message });
+            }
+        }
+
 
         [HttpGet("{Oid}")]
         public async Task<ActionResult<Product>> GetProduct(Guid oid)
@@ -75,6 +121,7 @@ namespace ProductAPI.Controllers
                     product.Name = updatedProduct.Name;
                     product.Description = updatedProduct.Description;
                     product.Price = updatedProduct.Price;
+                    product.CreatedAt = DateTime.UtcNow;
 
                     await _context.SaveChangesAsync();
                     return Ok(product);
@@ -83,6 +130,27 @@ namespace ProductAPI.Controllers
                 {
                     return StatusCode(500, $"Error occurred while updating product with id {oid}: " + ex.Message);
                 }
+            }
+        }
+        [HttpPut("restore/{oid}")]
+        public async Task<IActionResult> RestoreProduct(Guid oid)
+        {
+            try
+            {
+                var product = await _context.Products.FirstOrDefaultAsync(p => p.Oid == oid && p.IsDeleted);
+                if (product == null)
+                {
+                    return NotFound(new { message = "Product not found or not marked as deleted." });
+                }
+
+                product.IsDeleted = false; 
+                await _context.SaveChangesAsync();
+
+                return Ok(new { message = "Product restored successfully!" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while restoring the product.", error = ex.Message });
             }
         }
 
@@ -100,35 +168,13 @@ namespace ProductAPI.Controllers
                 product.IsDeleted = true;
                 await _context.SaveChangesAsync();
 
-                return Ok("Product successfully marked as deleted.");
+                return NoContent();
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"Error occurred while deleting product with id {oid}: " + ex.Message);
             }
         }
-        [HttpDelete("finalize")]
-        public async Task<IActionResult> Finalize()
-        {
-            try
-            {
-                var deletedProducts = await _context.Products.Where(p => p.IsDeleted).ToListAsync();
-
-                if (deletedProducts.Count == 0)
-                {
-                    return NotFound("No products marked as deleted.");
-                }
-
-                _context.Products.RemoveRange(deletedProducts);
-
-                await _context.SaveChangesAsync();
-
-                return Ok("Successfully removed all products marked as deleted.");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, "Error occurred while clearing deleted products: "+ex.Message);
-            }
-        }
+       
     }
 }
